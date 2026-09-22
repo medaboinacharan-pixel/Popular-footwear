@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - Popular Footwear</title>
+
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Popular Footwear
+        </div>
+
+        <ul class="Gender">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="../gender/men.html">Men</a></li>
+            <li><a href="../gender/women.html">Women</a></li>
+            <li><a href="../gender/kids.html">Kids</a></li>
+        </ul>
+
+        <ul class="nav-links">
+            <li><a href="../components/about.html">About</a></li>
+            <li><a href="../components/contact.html">Contact</a></li>
+
+            <li>
+                <a href="../components/cart.html">
+                    🛒
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <section class="product-detail">
+
+        <div class="detail-image">
+
+            <img id="productImage" src="" alt="Product">
+
+        </div>
+
+
+        <div class="detail-info">
+
+            <p class="detail-category" id="productCategory">
+                Category
+            </p>
+
+            <h1 id="productName">
+                Product Name
+            </h1>
+
+            <h2 id="productPrice">
+                $0
+            </h2>
+
+            <p id="productDescription">
+                Product description
+            </p>
+
+
+            <div class="quantity-box">
+
+                <button id="minusBtn">
+                    −
+                </button>
+
+                <span id="quantity">
+                    1
+                </span>
+
+                <button id="plusBtn">
+                    +
+                </button>
+
+            </div>
+
+
+            <button id="detailAddToCart" class="detail-cart-btn">
+                🛒 Add to Cart
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

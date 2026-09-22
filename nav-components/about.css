@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #111;
+}
+
+/* ================= ABOUT BANNER ================= */
+
+.about-banner {
+    height: 450px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background-image: url("imgs/aboutus.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+
+    inset: 0;
+}
+
+.banner-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 70px;
+
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 19px;
+}
+
+
+/* ================= SHOP INFO ================= */
+
+.shop-info {
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 450px;
+}
+
+.shop-text {
+    padding: 60px;
+}
+
+.small-line {
+    width: 80px;
+    height: 4px;
+    background: #168ad4;
+    margin-bottom: 25px;
+}
+
+.shop-text h2,
+.owner-content h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+}
+
+.shop-text p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.shop-image {
+    width: 100%;
+}
+
+.shop-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ================= OWNER ================= */
+
+.owner-section {
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns: 420px 1fr;
+
+    min-height: 500px;
+}
+
+.owner-image {
+    width: 100%;
+    height: 100%;
+}
+
+.owner-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: 50%;
+
+    display: block;
+}
+
+.owner-content {
+    padding: 60px;
+}
+
+.owner-content h3 {
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.owner-role {
+    color: #168ad4;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.owner-content p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.owner-content blockquote {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-left: 4px solid #ffd21f;
+
+    background: #f8f8f8;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 18px;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-us {
+    padding: 70px 6%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.why-us > h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    margin-bottom: 45px;
+}
+
+.why-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.why-card {
+    background: #f6f7f8;
+
+    padding: 35px 20px;
+
+    border: 1px solid #e1e1e1;
+
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.why-card span {
+    font-size: 35px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #666;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-family: Impact, "Arial Black", sans-serif;
+
+    font-style: italic;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aaa;
+
+    margin-top: 7px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    .Gender,
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .shop-info {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-image {
+        height: 350px;
+    }
+
+    .owner-section {
+        grid-template-columns: 1fr;
+    }
+
+    .owner-image {
+        height: 400px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content h1 {
+        font-size: 48px;
+    }
+}

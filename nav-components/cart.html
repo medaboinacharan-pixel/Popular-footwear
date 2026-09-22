@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Popular Footwear</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <div class="cart-page">
+
+       
+
+
+        <!-- HEADER -->
+        <div class="cart-header">
+
+            <button class="back-btn" onclick="history.back()">
+                ←
+            </button>
+
+            <h1>Review Your Cart</h1>
+
+            <div class="cart-count">0</div>
+
+        </div>
+
+
+        <!-- PRODUCTS WILL COME HERE FROM JAVASCRIPT -->
+        <div class="cart-items">
+            <!-- JavaScript adds products here -->
+        </div>
+
+
+        <!-- DISCOUNT -->
+        <div class="discount-row">
+
+            <span>Got a Discount Code?</span>
+
+            <button class="arrow-btn" id="discountArrow">
+               ⌄
+            </button>
+
+        </div>
+
+
+        <!-- DISCOUNT INPUT -->
+        <div class="discount-box" id="discountBox">
+
+            <input
+                type="text"
+                id="discountCode"
+                placeholder="Enter discount code"
+            >
+
+            <button id="applyDiscount">
+                Apply
+            </button>
+
+            <p id="discountMessage"></p>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+        <div class="cart-summary">
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="subtotal">₹0.00</strong>
+            </div>
+
+
+            <div class="summary-row">
+                <span>Discount</span>
+                <strong id="discount">₹0.00</strong>
+            </div>
+
+
+            <div class="summary-row total-row">
+
+                <span>Total</span>
+
+                <div>
+                    <del id="oldTotal">₹0.00</del>
+
+                    <strong id="total">
+                        ₹0.00
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <!-- CHECKOUT -->
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

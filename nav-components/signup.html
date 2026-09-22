@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Popular Footwear</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            Popular Footwear
+        </div>
+        <ul class="Gender">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+        </ul>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">🛒</a></li>
+        </ul>
+    </nav>
+
+    <!-- SIGNUP PAGE -->
+    <section class="signup-section">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="POST">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Popular Footwear</h2>
+        <p>Step into style. Walk with confidence.</p>
+        <p>© 2026 Popular Footwear</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
